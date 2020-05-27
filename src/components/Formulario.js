@@ -12,10 +12,10 @@ const Formulario = ({guardarCategoria}) => {
         { value: 'health', label: 'Salud'},
         { value: 'science', label: 'Ciencia'},
         { value: 'sports', label: 'Deportes'},
-        { value: 'technology', label: 'Tecnología'},
+        { value: 'technology', label: 'Tecnología'}
     ]
 
-    // utilizar custom hook
+    // utilizar custom hook- le pasamos las OPCIONES
     const [ categoria, SelectNoticias ] = useSelect('general', OPCIONES);
 
     // submit al form, pasar categoria a app.js
